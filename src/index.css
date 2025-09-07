@@ -1,0 +1,270 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  button,
+  input,
+  select,
+  textarea {
+    @apply appearance-none bg-transparent border-0 outline-none;
+  }
+}
+
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .all-\[unset\] {
+    all: unset;
+  }
+}
+
+:root {
+  --2d-colors-foreground-color: var(--2d-colors-snow);
+  --2d-colors-scrim-foreground-scrim: rgba(0, 0, 0, 0.04);
+  --2d-colors-snow: rgba(255, 255, 255, 1);
+  --2d-colors-tree: rgba(48, 105, 105, 1);
+  --asset-master-ambient-dawn: rgba(57, 34, 32, 1);
+  --asset-master-ambient-day: rgba(222, 216, 201, 1);
+  --asset-master-ambient-night: rgba(25, 33, 41, 1);
+  --asset-master-ambient-sunset: rgba(56, 33, 30, 1);
+  --asset-master-fog-dawn: rgba(150, 105, 97, 1);
+  --asset-master-fog-day: rgba(128, 169, 175, 1);
+  --asset-master-fog-night: rgba(43, 56, 69, 1);
+  --asset-master-fog-sunset: rgba(170, 116, 77, 1);
+  --asset-master-sky-dawn: rgba(37, 44, 75, 1);
+  --asset-master-sky-day: rgba(11, 88, 95, 1);
+  --asset-master-sky-night: rgba(10, 15, 19, 1);
+  --asset-master-sky-sunset: rgba(45, 61, 84, 1);
+  --assets-colorscloudsclouds: rgba(255, 255, 255, 0.2);
+  --assets-colorscloudsdark: rgba(143, 156, 169, 1);
+  --assets-colorscloudsgreyish: rgba(234, 234, 234, 1);
+  --assets-colorscloudspure: rgba(255, 255, 255, 1);
+  --assets-colorscloudspure-transp-50: rgba(255, 255, 255, 0.5);
+  --assets-colorslightmoonshapemoon: rgba(255, 255, 255, 1);
+  --assets-colorslightmoonshapemoon-shadow: rgba(130, 130, 130, 1);
+  --assets-colorslightstar: rgba(255, 255, 255, 1);
+  --assets-colorslightsunshapenoon: rgba(255, 255, 255, 1);
+  --assets-colorslightsunshapesunrise: rgba(248, 243, 203, 1);
+  --assets-colorslightsunshapesunset: rgba(255, 155, 38, 1);
+  --assets-colorsmaterials-sfxdust: rgba(138, 138, 138, 0.5);
+  --assets-colorsmaterials-sfxfire-red: rgba(244, 122, 85, 1);
+  --assets-colorsmaterials-sfxfire-smoke: rgba(0, 0, 0, 0.01);
+  --assets-colorsmaterials-sfxfire-yellow: rgba(255, 246, 165, 1);
+  --assets-colorsmaterials-sfxsand: rgba(228, 174, 144, 1);
+  --assets-colorsmaterials-sfxsnow: rgba(255, 255, 255, 1);
+  --assets-colorsmaterials-sfxstone: rgba(105, 110, 103, 1);
+  --assets-colorsmaterials-sfxstone-light: rgba(199, 193, 161, 1);
+  --body-large-font-family: "Roboto Serif", Helvetica;
+  --body-large-font-size: 14px;
+  --body-large-font-style: normal;
+  --body-large-font-weight: 400;
+  --body-large-letter-spacing: -0.5px;
+  --body-large-line-height: 16px;
+  --body-medium-font-family: "Roboto Serif", Helvetica;
+  --body-medium-font-size: 12px;
+  --body-medium-font-style: normal;
+  --body-medium-font-weight: 400;
+  --body-medium-letter-spacing: -0.5px;
+  --body-medium-line-height: 16px;
+  --body-small-font-family: "Roboto Serif", Helvetica;
+  --body-small-font-size: 10px;
+  --body-small-font-style: normal;
+  --body-small-font-weight: 400;
+  --body-small-letter-spacing: -0.5px;
+  --body-small-line-height: 12px;
+  --fog-and-ambient-depth-0: 20px;
+  --fog-and-ambient-depth-1: 20px;
+  --fog-and-ambient-depth-2: 80px;
+  --fog-and-ambient-depth-3: 90px;
+  --fog-and-ambient-depth-4: 100px;
+  --headline-s-font-family: "Roboto Serif", Helvetica;
+  --headline-s-font-size: 18px;
+  --headline-s-font-style: normal;
+  --headline-s-font-weight: 400;
+  --headline-s-letter-spacing: -0.5px;
+  --headline-s-line-height: 20px;
+  --label-large-font-family: "Roboto Serif", Helvetica;
+  --label-large-font-size: 16px;
+  --label-large-font-style: normal;
+  --label-large-font-weight: 400;
+  --label-large-letter-spacing: -0.5px;
+  --label-large-line-height: 20px;
+  --label-XL-font-family: "Roboto Serif", Helvetica;
+  --label-XL-font-size: 18px;
+  --label-XL-font-style: normal;
+  --label-XL-font-weight: 400;
+  --label-XL-letter-spacing: -0.5px;
+  --label-XL-line-height: 20px;
+  --label-XXL-font-family: "Roboto Serif", Helvetica;
+  --label-XXL-font-size: 24px;
+  --label-XXL-font-style: normal;
+  --label-XXL-font-weight: 400;
+  --label-XXL-letter-spacing: -0.5px;
+  --label-XXL-line-height: 28px;
+  --numbers-corner: var(--numbers-number-2);
+  --numbers-number-2: 2px;
+  --UI-palette-colors-coin: rgba(245, 236, 149, 1);
+  --UI-palette-colors-error: rgba(176, 87, 76, 1);
+  --UI-palette-colors-llama: rgba(132, 113, 90, 1);
+  --UI-palette-neutral-on-color: rgba(255, 255, 255, 1);
+  --UI-palette-neutral-on-inverse-surface: rgba(255, 255, 255, 1);
+  --UI-palette-neutral-on-inverse-surface-2: rgba(255, 255, 255, 0.8);
+  --UI-palette-neutral-on-surface: rgba(22, 22, 22, 1);
+  --UI-palette-neutral-on-surface-2: rgba(22, 22, 22, 0.8);
+  --UI-palette-surfaces-inverse-surface: rgba(22, 22, 22, 1);
+  --UI-palette-surfaces-inverse-surface-trans-12: rgba(0, 0, 0, 0.12);
+  --UI-palette-surfaces-inverse-surface-trans-20: rgba(0, 0, 0, 0.2);
+  --UI-palette-surfaces-inverse-surface-trans-40: rgba(0, 0, 0, 0.4);
+  --UI-palette-surfaces-inverse-surface-trans-64: rgba(0, 0, 0, 0.64);
+  --UI-palette-surfaces-surface-FF: rgba(255, 255, 255, 1);
+  --UI-palette-surfaces-surface-trans-20: rgba(255, 255, 255, 0.2);
+  --x-2dforeground: var(--2d-colors-foreground-color);
+  --x-2dsnow: rgba(255, 255, 255, 1);
+}
+
+/*
+
+To enable a theme in your HTML, simply add one of the following data attributes to an HTML element, like so:
+
+<body data-UI-palette-mode="day">
+    <!-- the rest of your content -->
+</body>
+
+You can apply the theme on any DOM node, not just the `body`
+
+*/
+
+[data-UI-palette-mode="day"] {
+  --UI-palette-neutral-on-inverse-surface: rgba(255, 255, 255, 1);
+  --UI-palette-neutral-on-inverse-surface-2: rgba(255, 255, 255, 0.8);
+  --UI-palette-neutral-on-surface: rgba(22, 22, 22, 1);
+  --UI-palette-neutral-on-surface-2: rgba(22, 22, 22, 0.8);
+  --UI-palette-surfaces-inverse-surface: rgba(22, 22, 22, 1);
+  --UI-palette-surfaces-inverse-surface-trans-12: rgba(0, 0, 0, 0.12);
+  --UI-palette-surfaces-inverse-surface-trans-20: rgba(0, 0, 0, 0.2);
+  --UI-palette-surfaces-inverse-surface-trans-40: rgba(0, 0, 0, 0.4);
+  --UI-palette-surfaces-inverse-surface-trans-64: rgba(0, 0, 0, 0.64);
+  --UI-palette-surfaces-surface-FF: rgba(255, 255, 255, 1);
+}
+
+[data-UI-palette-mode="night"] {
+  --UI-palette-neutral-on-inverse-surface: rgba(22, 22, 22, 1);
+  --UI-palette-neutral-on-inverse-surface-2: rgba(22, 22, 22, 1);
+  --UI-palette-neutral-on-surface: rgba(255, 255, 255, 1);
+  --UI-palette-neutral-on-surface-2: rgba(255, 255, 255, 0.8);
+  --UI-palette-surfaces-inverse-surface: rgba(255, 255, 255, 1);
+  --UI-palette-surfaces-inverse-surface-trans-12: rgba(255, 255, 255, 0.12);
+  --UI-palette-surfaces-inverse-surface-trans-20: rgba(255, 255, 255, 0.2);
+  --UI-palette-surfaces-inverse-surface-trans-40: rgba(255, 255, 255, 0.4);
+  --UI-palette-surfaces-inverse-surface-trans-64: rgba(255, 255, 255, 0.64);
+  --UI-palette-surfaces-surface-FF: rgba(22, 22, 22, 1);
+}
+
+:root {
+  --animate-spin: spin 1s linear infinite;
+}
+
+.animate-fade-in {
+  animation: fade-in 1s var(--animation-delay, 0s) ease forwards;
+}
+
+.animate-fade-up {
+  animation: fade-up 1s var(--animation-delay, 0s) ease forwards;
+}
+
+.animate-marquee {
+  animation: marquee var(--duration) infinite linear;
+}
+
+.animate-marquee-vertical {
+  animation: marquee-vertical var(--duration) linear infinite;
+}
+
+.animate-shimmer {
+  animation: shimmer 8s infinite;
+}
+
+.animate-spin {
+  animation: var(--animate-spin);
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(1turn);
+  }
+}
+
+@keyframes image-glow {
+  0% {
+    opacity: 0;
+    animation-timing-function: cubic-bezier(0.74, 0.25, 0.76, 1);
+  }
+
+  10% {
+    opacity: 0.7;
+    animation-timing-function: cubic-bezier(0.12, 0.01, 0.08, 0.99);
+  }
+
+  to {
+    opacity: 0.4;
+  }
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes fade-up {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes shimmer {
+  0%,
+  90%,
+  to {
+    background-position: calc(-100% - var(--shimmer-width)) 0;
+  }
+
+  30%,
+  60% {
+    background-position: calc(100% + var(--shimmer-width)) 0;
+  }
+}
+
+@keyframes marquee {
+  0% {
+    transform: translate(0);
+  }
+
+  to {
+    transform: translateX(calc(-100% - var(--gap)));
+  }
+}
+
+@keyframes marquee-vertical {
+  0% {
+    transform: translateY(0);
+  }
+
+  to {
+    transform: translateY(calc(-100% - var(--gap)));
+  }
+}
