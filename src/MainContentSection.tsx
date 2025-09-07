@@ -94,6 +94,7 @@ export const MainContentSection = () => {
                   <div className={achievement.iconConfig.wrapperClass}>
                     <div className={achievement.iconConfig.innerClass}>
                       {achievement.icons.map((icon, index) => (
+                        
                         <img
                           key={index}
                           className={icon.class}
