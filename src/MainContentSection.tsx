@@ -44,6 +44,8 @@ export const MainContentSection = () => {
   return (
     <section className="flex flex-col w-80 items-start gap-4 p-[17px] self-stretch bg-[#21101f] rounded-3xl relative border border-solid border-[#26384d]">
       <header className="flex flex-col items-start relative self-stretch w-full flex-[0_0_auto]">
+
+        
         <h2 className="w-[68.63px] text-[#e6fff5] text-base relative [font-family:'Inter-SemiBold',Helvetica] font-semibold tracking-[0] leading-[normal]">
           Progress
         </h2>
