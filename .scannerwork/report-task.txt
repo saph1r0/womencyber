@@ -1,0 +1,6 @@
+projectKey=womencyber
+serverUrl=http://localhost:9000
+serverVersion=25.9.0.112764
+dashboardUrl=http://localhost:9000/dashboard?id=womencyber
+ceTaskId=28c9c90c-62d6-49d3-8e60-1714004ff409
+ceTaskUrl=http://localhost:9000/api/ce/task?id=28c9c90c-62d6-49d3-8e60-1714004ff409
